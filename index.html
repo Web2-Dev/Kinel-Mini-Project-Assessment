@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechLearn Academy – Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV (Week 2 – Semantic HTML) ========== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Tech<span>Learn</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SECTION (Week 5 – Flexbox) ========== -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-tag">&#127758; Lagos, Nigeria &nbsp;|&nbsp; Online & In-Person</p>
+        <h1>Learn to Build<br /><span>the Web.</span></h1>
+        <p class="hero-sub">
+          Practical, beginner-friendly tech education for the next generation
+          of Nigerian developers. No prior experience needed.
+        </p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-primary">Apply Now</a>
+          <a href="#courses" class="btn btn-outline">View Courses</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="code-card">
+          <div class="code-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="file-name">index.html</span>
+          </div>
+          <pre class="code-body"><code><span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="attr">title</span>: My First Page
+  <span class="tag">&lt;/head&gt;</span>
+  <span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;h1&gt;</span><span class="val">Hello, World!</span><span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span><span class="val">I built this.</span><span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES STRIP (Week 5 – Flexbox) ========== -->
+    <section class="features-strip">
+      <div class="feature-item">
+        <span class="feature-icon">&#128218;</span>
+        <p>Structured Curriculum</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">&#128187;</span>
+        <p>Hands-on Projects</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">&#129489;&#8205;&#128187;</span>
+        <p>Expert Instructors</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">&#127942;</span>
+        <p>Certificate on Completion</p>
+      </div>
+    </section>
+
+    <!-- ========== COURSES SECTION (Week 2 – Semantic HTML + Week 4 – Box Model) ========== -->
+    <section class="courses" id="courses">
+      <div class="section-header">
+        <h2>Our Courses</h2>
+        <p>Choose a track that suits your goals and skill level.</p>
+      </div>
+      <div class="course-cards">
+
+        <article class="card">
+          <div class="card-badge">Beginner</div>
+          <h3>HTML &amp; CSS Foundations</h3>
+          <p>Learn to build and style web pages from scratch. Covers semantic markup, the box model, flexbox, and responsive design.</p>
+          <ul class="card-meta">
+            <li>&#128337; 6 Weeks</li>
+            <li>&#128197; Weekends</li>
+            <li>&#128176; ₦25,000</li>
+          </ul>
+          <a href="contact.html" class="btn btn-card">Enroll</a>
+        </article>
+
+        <article class="card card-featured">
+          <div class="card-badge">Popular</div>
+          <h3>Full-Stack JavaScript</h3>
+          <p>Go from HTML basics to building full web applications with JavaScript, Node.js, and databases.</p>
+          <ul class="card-meta">
+            <li>&#128337; 12 Weeks</li>
+            <li>&#128197; Mon &amp; Wed</li>
+            <li>&#128176; ₦55,000</li>
+          </ul>
+          <a href="contact.html" class="btn btn-card">Enroll</a>
+        </article>
+
+        <article class="card">
+          <div class="card-badge">Intermediate</div>
+          <h3>UI/UX &amp; Design Systems</h3>
+          <p>Master Figma, design principles, and how to translate designs into pixel-perfect code.</p>
+          <ul class="card-meta">
+            <li>&#128337; 8 Weeks</li>
+            <li>&#128197; Tuesdays</li>
+            <li>&#128176; ₦40,000</li>
+          </ul>
+          <a href="contact.html" class="btn btn-card">Enroll</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== SCHEDULE TABLE (Week 3 – Tables) ========== -->
+    <section class="schedule" id="schedule">
+      <div class="section-header">
+        <h2>Class Schedule</h2>
+        <p>All classes hold at our Victoria Island campus and online via Zoom.</p>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Day(s)</th>
+              <th>Time</th>
+              <th>Mode</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML &amp; CSS Foundations</td>
+              <td>Saturday &amp; Sunday</td>
+              <td>10:00 AM – 1:00 PM</td>
+              <td>Hybrid</td>
+              <td><span class="status open">Open</span></td>
+            </tr>
+            <tr>
+              <td>Full-Stack JavaScript</td>
+              <td>Monday &amp; Wednesday</td>
+              <td>6:00 PM – 8:30 PM</td>
+              <td>Online</td>
+              <td><span class="status open">Open</span></td>
+            </tr>
+            <tr>
+              <td>UI/UX &amp; Design Systems</td>
+              <td>Tuesday</td>
+              <td>5:00 PM – 8:00 PM</td>
+              <td>In-Person</td>
+              <td><span class="status full">Full</span></td>
+            </tr>
+            <tr>
+              <td>Python for Beginners</td>
+              <td>Thursday &amp; Friday</td>
+              <td>7:00 PM – 9:00 PM</td>
+              <td>Online</td>
+              <td><span class="status soon">Coming Soon</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT (Week 2 – Semantic HTML) ========== -->
+    <section class="about">
+      <div class="about-text">
+        <h2>Why TechLearn?</h2>
+        <p>
+          We're a Lagos-based coding school on a mission to make quality tech education
+          accessible and affordable. Our instructors are working professionals who bring
+          real-world experience into every class.
+        </p>
+        <p>
+          Since 2021, we've trained over <strong>800 students</strong> — many of whom now
+          work at top companies across Nigeria and beyond.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">800+</span>
+          <span class="stat-label">Graduates</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">12</span>
+          <span class="stat-label">Courses</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4.9★</span>
+          <span class="stat-label">Avg Rating</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3yrs</span>
+          <span class="stat-label">Experience</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER (Week 2 – Semantic HTML) ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Tech<span>Learn</span></a>
+        <p>Building the next generation<br />of Nigerian developers.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li>&#128205; 14 Adeola Odeku St, VI, Lagos</li>
+          <li>&#128222; +234 801 234 5678</li>
+          <li>&#128231; hello@techlearn.ng</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 TechLearn Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
