@@ -1,0 +1,8 @@
+{
+  "name": "kinel-mini-project",
+  "version": 2,
+  "public": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
+}
